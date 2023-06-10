@@ -1,7 +1,7 @@
 package rentacar.reto_3.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "message")
