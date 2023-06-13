@@ -11,7 +11,7 @@ import java.util.Map;
 @RestController
 public class UserController {
     @GetMapping("/user") //Vamos a traer la información del usuario que se registra con GitHub mediante Oauth2
-    public Map <String, Object> user(@AuthenticationPrincipal OAuth2User principal){
+    public Map <String, Object> user (@AuthenticationPrincipal OAuth2User principal){
         System.out.println("Datos del usuario\n"+ principal.getAttributes()); //Nos imprime todos los atributos
         return Collections.singletonMap("name",principal.getAttribute("name"));
     }
