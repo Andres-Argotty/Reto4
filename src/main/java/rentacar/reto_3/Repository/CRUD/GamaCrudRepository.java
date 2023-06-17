@@ -5,3 +5,4 @@ import rentacar.reto_3.Model.Gama;
 
 public interface GamaCrudRepository extends CrudRepository<Gama, Integer> {
 }
+//hola
